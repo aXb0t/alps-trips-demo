@@ -13,5 +13,11 @@
     "tailwindcss": "3",
     "webpack": "5",
     "webpack-cli": "5"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "start": "webpack --watch",
+    "start:dev": "webpack --watch --mode development"
   }
 }

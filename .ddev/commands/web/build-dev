@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Description: Build front end with webpack shortcut
+## Usage: build-dev
+
+yarn --cwd=web/themes/custom/alps_trips build:dev
