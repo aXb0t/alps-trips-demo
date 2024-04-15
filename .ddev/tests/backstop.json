@@ -1,5 +1,5 @@
 {
-  "id": "packt",
+  "id": "alps-trips-demo",
   "viewports": [
     {
       "label": "phone",
@@ -23,32 +23,32 @@
     {
       "label": "Homepage",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web"
+      "url": "http://ddev-alps-trips-demo-web"
     },
     {
       "label": "Trips",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web/trips"
+      "url": "http://ddev-alps-trips-demo-web/trips"
     },
     {
       "label": "Trip",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web/node/12"
+      "url": "http://ddev-alps-trips-demo-web/node/12"
     },
     {
       "label": "Contact us",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web/contact/feedback"
+      "url": "http://ddev-alps-trips-demo-web/contact/feedback"
     },
     {
       "label": "Weather forecast",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web/forecast/turin"
+      "url": "http://ddev-alps-trips-demo-web/forecast/turin"
     },
     {
       "label": "Login page",
       "cookiePath": "backstop/backstop_data/engine_scripts/cookies.json",
-      "url": "http://ddev-packt-web/user/login"
+      "url": "http://ddev-alps-trips-demo-web/user/login"
     }
   ],
   "paths": {
