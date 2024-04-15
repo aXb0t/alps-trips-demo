@@ -16,7 +16,10 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "16"
+nodejs_version: "20"
+hooks:
+  post-start:
+    - exec: nvm install v20.12.2 && nvm current
 # Key features of ddev's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
