@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## Description: remove placeholder and generate starterkit theme
+## Usage: gen-theme
+
+## if the alps_trips.theme file is not present in web/themes/custom/alps_trips,
+## the theme has not been generated yet, so
+## remove the themes/custom/alps_trips demo site placeholder directory
+
+if [ ! -f web/themes/custom/alps_trips/alps_trips.theme ]; then
+  rm -Rf web/themes/custom/alps_trips
+fi
+
+php web/core/scripts/drupal generate-theme alps_trips --path themes/custom
