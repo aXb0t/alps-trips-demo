@@ -85,7 +85,7 @@ class ForecastController extends ControllerBase {
       '#forecast' => $forecast,
       '#units' => $this->config('alps_weather.settings')->get('units'),
       '#cache' => [
-        'max-age' => 10800,
+        'max-age' => 3600,
         'tags' => [
           'forecast:' . $city,
         ],
