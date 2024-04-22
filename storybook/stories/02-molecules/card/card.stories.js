@@ -12,6 +12,8 @@ export default {
     }),
   },
   decorators: [(story) => `<div class="w-1/4">${story()}</div>`],
+  // remove the decorators to see the full width
+  // decorators: [(story) => `<div class="">${story()}</div>`],
 };
 
 export const Default = ({ title, description, image }) =>
