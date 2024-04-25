@@ -21,6 +21,12 @@ libraries-extend:
 core_version_requirement: ^10
 generator: "starterkit_theme:10.1.1"
 
+components:
+  namespaces:
+    atoms: ../../../../storybook/stories/01-atoms
+    molecules: ../../../../storybook/stories/02-molecules
+    organisms: ../../../../storybook/stories/03-organisms
+
 regions:
   header: Header
   breadcrumb: Breadcrumb

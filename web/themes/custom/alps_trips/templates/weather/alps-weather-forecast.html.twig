@@ -11,17 +11,26 @@
  */
 #}
 
-<h2>Local forecast for {{ forecast.city.name }}</h2>
-<div class="forecast-list">
+<h2 class="text-lg my-10">
+  Forecast for: {{ forecast.city.name }}
+</h2>
+<div class="flex space-x-5">
   {% for item in forecast.list %}
-    <div class="forecast-element">
-      <h3 class="forecast-element__date">{{ item.dt_txt|date("d/m/Y H:i") }}</h3>
-      <p class="forecast-element__temp">{{ item.main.temp }} °{{ units == 'metric' ? 'C' : 'F' }}</p>
-      <p class="forecast-element__description">{{ item.weather[0].description|title }}</p>
-      <a href="{{ path('alps_weather.details', {city:forecast.city.name, date:item.dt_txt}) }}" class="use-ajax"
-         data-dialog-type="dialog"
-         data-dialog-renderer="off_canvas"
-         data-dialog-options='{"width":700,"title":"{{ 'Details'|t }}"}'>More info</a>
-    </div>
+    {{ include('@molecules/weather.html.twig',
+      {
+        'date1': item.dt_txt|date("d/m/Y"),
+        'date2': item.dt_txt|date("H:i"),
+        'title': item.weather[0].description|title,
+        'temp':
+          item.main.temp ~ ' °' ~ (units == 'metric' ? 'C'
+            : 'F'),
+        'dialogUrl':
+          path(
+            'alps_weather.details',
+            {city:forecast.city.name, date:item.dt_txt}
+          ),
+        'infoLabel': 'More info'|t,
+      }
+    ) }}
   {% endfor %}
 </div>
