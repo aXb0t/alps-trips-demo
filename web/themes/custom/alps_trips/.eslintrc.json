@@ -31,6 +31,12 @@
     "consistent-return": ["off"],
     "no-underscore-dangle": ["off"],
     "max-nested-callbacks": ["warn", 3],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "projectDependencies": false
+      }
+    ],
     "import/no-mutable-exports": ["warn"],
     "no-plusplus": ["warn", {
       "allowForLoopAfterthoughts": true
