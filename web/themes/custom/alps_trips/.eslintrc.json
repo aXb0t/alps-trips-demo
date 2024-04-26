@@ -31,12 +31,6 @@
     "consistent-return": ["off"],
     "no-underscore-dangle": ["off"],
     "max-nested-callbacks": ["warn", 3],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": false
-      }
-    ],
     "import/no-mutable-exports": ["warn"],
     "no-plusplus": ["warn", {
       "allowForLoopAfterthoughts": true
@@ -52,7 +46,13 @@
     }],
     "no-unused-vars": ["warn"],
     "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
-    "yml/indent": ["error", 2]
+    "yml/indent": ["error", 2],
+        "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
   },
   "ignorePatterns": ["postcss.config.js", "build/*.js"]
 }
