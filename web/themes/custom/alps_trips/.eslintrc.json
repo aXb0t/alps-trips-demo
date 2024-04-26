@@ -34,7 +34,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "projectDependencies": false
+        "devDependencies": false
       }
     ],
     "import/no-mutable-exports": ["warn"],

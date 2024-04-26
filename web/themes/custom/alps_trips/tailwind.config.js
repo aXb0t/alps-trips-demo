@@ -1,5 +1,5 @@
-const typography = require('@tailwindcss/typography');
-const forms = require('@tailwindcss/forms');
+const typography = require("@tailwindcss/typography");
+const forms = require("@tailwindcss/forms");
 
 module.exports = {
   mode: "jit",
