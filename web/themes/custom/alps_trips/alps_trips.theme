@@ -28,3 +28,17 @@ function alps_trips_theme_suggestions_region_alter(array &$suggestions, array $v
     }
   }
 }
+
+//  machine_name_preprocess_THEME_HOOK(&$variables)
+function alps_trips_preprocess_region(&$variables): void {
+  if ($variables['region'] == 'footer') {
+    $variables['site_name'] = \Drupal::config('system.site')->get('name');
+    $variables['copyright'] = '&copy; 2023 All Rights Reserved.';
+    $variables['socials'] = [
+      [
+        'url' => 'https://www.github.com',
+        'svg' => '...'
+      ],
+    ];
+  }
+}
