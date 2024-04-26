@@ -13,8 +13,10 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
+
 {% block content %}
-  {{ include('@atoms/logo.html.twig',
+  {{
+  include('@atoms/logo.html.twig',
     {
       'url': site_logo,
       'alt': site_name,

@@ -3,7 +3,6 @@ type: theme
 "base theme": stable9
 starterkit: true
 description: "A custom theme for the ALPS Trips website."
-logo: "logo.svg"
 libraries:
   - alps_trips/base
   - alps_trips/messages
