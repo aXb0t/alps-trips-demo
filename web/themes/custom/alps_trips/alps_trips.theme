@@ -20,16 +20,20 @@ function alps_trips_preprocess_image_widget(array &$variables) {
   }
 }
 
-// implement hook_theme_suggestions_region_alter
+/**
+ * Implements hook_preprocess_region_alter().
+ */
 function alps_trips_theme_suggestions_region_alter(array &$suggestions, array $variables): void {
   if (!empty($variables['elements']['#region'])) {
-    if (\Drupal::service('path.matcher')->isFrontPage())  {
+    if (\Drupal::service('path.matcher')->isFrontPage()) {
       $suggestions[] = 'region__' . $variables['elements']['#region'] . '__front';
     }
   }
 }
 
-//  machine_name_preprocess_THEME_HOOK(&$variables)
+/**
+ * Implements hook_preprocess_region().
+ */
 function alps_trips_preprocess_region(&$variables): void {
   if ($variables['region'] == 'footer') {
     $variables['site_name'] = \Drupal::config('system.site')->get('name');
