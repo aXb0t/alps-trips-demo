@@ -4,7 +4,9 @@
   "description": "Alps Trips dependencies",
   "author": "Luca Lusso",
   "license": "GPL-3.0",
-  "plugins": ["import"],
+  "plugins": [
+    "import"
+  ],
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
