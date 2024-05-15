@@ -24,3 +24,42 @@ Part 2:
 - Chapter 12
 - Chapter 13
 - Chapter 14
+
+
+### Working Notes
+
+Restarting and building
+
+```
+ddev restart
+```
+
+```
+ddev build
+```
+
+Start storybook
+Storybook commands pass through to Yarn
+```
+ddev storybook storybook
+```
+
+Run with debug command:
+```
+ddev storybook storybook --debug
+```
+
+Start watching with BrowserSync
+
+Terminal 1
+DDEV BrowserSync automatically refreshes changes in the browser
+```
+ddev browsersync
+```
+Terminal 2
+DDEV watch installs and builds development front end
+```
+ddev watch
+```
+
+
