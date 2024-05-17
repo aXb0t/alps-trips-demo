@@ -153,4 +153,6 @@ map:
   js:
     js/map.js: {}
   dependencies:
+    - core/once
+    - core/drupal
     - alps_trips/leaflet
