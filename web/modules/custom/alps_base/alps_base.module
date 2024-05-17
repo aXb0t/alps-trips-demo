@@ -16,6 +16,9 @@ function alps_base_help($route_name) {
 }
 
 /**
+ * Implements hook_theme().
+ */
+/**
  * @return array[]
  */
 function alps_base_theme(): array {
@@ -38,3 +41,4 @@ function alps_base_entity_bundle_info_alter(array &$bundles): void {
     $bundles['block_content']['banner']['class'] = BannerBlock::class;
   }
 }
+
