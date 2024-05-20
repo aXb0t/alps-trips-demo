@@ -9,5 +9,14 @@
  *
  * @see template_preprocess_input()
  */
+
+/**
+ * default template code:
+ * <input{{ attributes }} />{{ children }}
+ */
 #}
-<input{{ attributes }} />{{ children }}
+
+{{ include('@atoms/input.html.twig', {
+  attributes: attributes,
+  children: children,
+}) }}
