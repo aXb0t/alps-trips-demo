@@ -6,6 +6,7 @@
  */
 
 use Drupal\block\Entity\Block;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_preprocess_image_widget().
@@ -70,4 +71,21 @@ function alps_trips_preprocess_region(&$variables): void {
       ],
     ];
   }
+}
+
+function alps_trips_form_user_login_form_alter(
+  &$form,
+  FormStateInterface $form_state,
+  $form_id): void {
+  $form['name']['#attributes']['placeholder'] = t('traveler@domain.net');
+  $form['pass']['#attributes']['placeholder'] = t('******');
+}
+
+function alps_trips_theme(): array {
+  return [
+    'user_login_form' => [
+      'render element' => 'form',
+      'template' => 'form/user-login-form',
+    ],
+  ];
 }
