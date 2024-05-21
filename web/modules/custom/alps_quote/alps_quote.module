@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Provides render array for the Quote module.
+ */
+
+/**
  * Implements hook_theme().
  */
 function alps_quote_theme(): array {

@@ -17,6 +17,11 @@ use Drupal\Core\Block\BlockBase;
  */
 class QuoteBlock extends BlockBase {
 
+  /**
+   * The quotes.
+   *
+   * @var array
+   */
   private array $quotes = [
     ['Life is either a daring adventure, or nothing at all', 'Helen Keller'],
     [

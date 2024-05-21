@@ -8,7 +8,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
 
 /**
- * Class WeatherClient.
+ * Class WeatherClient gets weather forecast data and makes it available.
  */
 class WeatherClient implements WeatherClientInterface {
 

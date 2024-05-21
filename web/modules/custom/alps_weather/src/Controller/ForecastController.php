@@ -35,8 +35,10 @@ class ForecastController extends ControllerBase {
    * Return a render array with full forecast data for the next 5 days.
    *
    * @param string $city
+   *   The city name.
    *
    * @return array
+   *   Returns $build array
    */
   public function page(string $city): array {
     $forecast = $this->weatherClient->getForecastData($city);
@@ -73,9 +75,12 @@ class ForecastController extends ControllerBase {
    * Return a render array with details for a specific day and time.
    *
    * @param string $city
+   *   The city name.
    * @param string $date
+   *   The date.
    *
    * @return array
+   *   Returns $build array
    */
   public function details(string $city, string $date): array {
     $forecast = $this->weatherClient->getForecastDetail($city, $date);
