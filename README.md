@@ -11,10 +11,10 @@ Part 1:
 - Chapter 4
 - Chapter 5
 - Chapter 6
+- Chapter 7
 
 TODO:
 ---
-- Chapter 7
 - Chapter 8
 - Chapter 9
 - Chapter 10
@@ -60,6 +60,11 @@ Terminal 2
 DDEV watch installs and builds development front end
 ```
 ddev watch
+```
+
+Run sniffers
+```
+ddev sniff
 ```
 
 

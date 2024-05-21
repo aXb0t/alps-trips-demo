@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Description: Run PHP_CodeSniffer on the custom module and theme directories
+## Usage: sniff
+
+## Print sniffing modules message
+echo "Sniffing custom modules..."
+php vendor/bin/phpcs --standard=web/phpcs.xml.dist web/modules/custom/
+## Print sniffing themes message
+echo "Sniffing custom themes..."
+php vendor/bin/phpcs --standard=web/phpcs.xml.dist web/themes/custom/alps_trips/
+## Print done sniffing message
+echo "Done sniffing!"
