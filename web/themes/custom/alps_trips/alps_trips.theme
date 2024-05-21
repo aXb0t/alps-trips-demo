@@ -73,14 +73,21 @@ function alps_trips_preprocess_region(&$variables): void {
   }
 }
 
+/**
+ * Implements hook_form_alrer().
+ */
 function alps_trips_form_user_login_form_alter(
   &$form,
   FormStateInterface $form_state,
-  $form_id): void {
+  $form_id,
+): void {
   $form['name']['#attributes']['placeholder'] = t('traveler@domain.net');
   $form['pass']['#attributes']['placeholder'] = t('******');
 }
 
+/**
+ * Implements hook_theme().
+ */
 function alps_trips_theme(): array {
   return [
     'user_login_form' => [
