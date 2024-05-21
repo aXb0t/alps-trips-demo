@@ -2,10 +2,10 @@
 
 namespace Drupal\alps_weather\Plugin\Block;
 
+use Drupal\alps_weather\WeatherClientInterface;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\alps_weather\WeatherClientInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**

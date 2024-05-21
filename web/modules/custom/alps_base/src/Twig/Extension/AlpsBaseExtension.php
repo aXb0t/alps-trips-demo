@@ -100,9 +100,13 @@ class AlpsBaseExtension extends AbstractExtension {
   }
 
   /**
+   * Returns the value of a theme setting.
+   *
    * @param string $theme_setting
+   *   The theme setting.
    *
    * @return string|null
+   *   Returns a string or nothing.
    */
   public function getThemeSetting(string $theme_setting): ?string {
     $conf = theme_get_setting($theme_setting);
@@ -125,4 +129,3 @@ class AlpsBaseExtension extends AbstractExtension {
   }
 
 }
-

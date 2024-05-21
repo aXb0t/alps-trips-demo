@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Provides help and renders for the Weather module.
+ */
+
+/**
  * Implements hook_help().
  */
 function alps_weather_help($route_name) {

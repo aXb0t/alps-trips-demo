@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Provides features for the Alps Trips website.
+ */
+
 use Drupal\alps_base\Entity\BannerBlock;
 
 /**
@@ -18,8 +23,12 @@ function alps_base_help($route_name) {
 /**
  * Implements hook_theme().
  */
+
 /**
+ * Returns array for location data.
+ *
  * @return array[]
+ *   Returns array for lat and long and text.
  */
 function alps_base_theme(): array {
   return [
@@ -41,4 +50,3 @@ function alps_base_entity_bundle_info_alter(array &$bundles): void {
     $bundles['block_content']['banner']['class'] = BannerBlock::class;
   }
 }
-
