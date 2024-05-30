@@ -2,11 +2,11 @@
 (function (Drupal, L) {
   Drupal.behaviors.map = {
     attach() {
-      once('map', '#map').forEach((el) => {
+      once("map", "#map").forEach((el) => {
         const { lat, lng, text } = el.dataset;
-        const map = L.map('map').setView([lat, lng], 13);
+        const map = L.map("map").setView([lat, lng], 13);
         map.scrollWheelZoom.disable();
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 19,
           attribution:
             '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -18,7 +18,7 @@
           popup.setLatLng(e.latlng).setContent(text).openOn(map);
         }
 
-        map.on('click', onMapClick);
+        map.on("click", onMapClick);
       });
     },
   };
