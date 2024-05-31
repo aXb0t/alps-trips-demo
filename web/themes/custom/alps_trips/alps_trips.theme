@@ -35,6 +35,22 @@ function alps_trips_preprocess_block(&$variables): void {
         $variables['elements']['content']['#block_content'];
     $variables['block_content'] = $block_content;
   }
+  $id = $variables['elements']['#id'];
+  if ($id == 'alps_trips_iceclimber') {
+    $variables['link'] = $block_content
+      ->get('field_link')->get(0)->get('uri')
+      ->getValue();
+    $variables['title'] = $block_content
+      ->get('field_link')->get(0)->get('title')
+      ->getValue();
+    $variables['image'] = $block_content
+      ->get('field_image')
+      ->entity->get('field_media_image')->entity
+      ->get('uri')->get(0)->get('url')->getValue();
+    $variables['cta'] = $block_content
+      ->get('field_cta')->get(0)->get('value')
+      ->getValue();
+  }
 }
 
 /**
