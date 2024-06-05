@@ -1,5 +1,5 @@
 {#
-/**
+/** question example
  * {{ include('@molecules/banner.html.twig', {
  *  'link': ???,
  *  'title': ???,
@@ -9,11 +9,23 @@
  */
 #}
 
-{{ include('@molecules/banner.html.twig', {
-  'link': link,
-  'image': file_url(image),
-  'cta': cta,
+{#
+/**
+ *  {{ include('@molecules/banner.html.twig', {
+ *  'link': link,
+ *  'image': file_url(image),
+ *  'cta': cta,
+ * }) }}
+ */
+ #}
+
+{# Calls field values from bundle class (alps_base module) #}
+ {{ include('@molecules/banner.html.twig', {
+  'link': block_content.getLink(),
+  'image': file_url(block_content.getImage()),
+  'cta': block_content.getCta(),
 }) }}
+
 
 {{ dump(content) }}
 
