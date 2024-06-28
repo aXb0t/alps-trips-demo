@@ -6,3 +6,10 @@ include('@organisms/header.html.twig',
     'background': true,
   })
 }}
+
+{{
+  include('alps_trips:at-button',
+    {'title': 'More info', 'type': 'primary'},
+    with_context = false
+  )
+}}
