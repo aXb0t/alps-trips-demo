@@ -1,0 +1,9 @@
+{{ include('@organisms/page-error.html.twig', {
+  srMessage: 'Error'|t,
+  errorCode: '403',
+  message1: "Forbidden."|t,
+  message2: 'Maybe you can go back to the homepage'|t,
+  message3: 'Back to homepage'|t,
+  url: path('<front>'),
+  cta: 'Back to homepage'|t,
+}) }}
