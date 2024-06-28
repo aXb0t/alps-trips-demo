@@ -14,10 +14,10 @@ Part 1:
 - Chapter 7
 - Chapter 8
 - Chapter 9
+- Chapter 10
 
 TODO:
 ---
-- Chapter 10
 
 Part 2:
 - Chapter 11
